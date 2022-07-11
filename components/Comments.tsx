@@ -77,7 +77,7 @@ const Comments = ({ comment, setComment, addComment, comments, isPostingComment 
             placeholder='Add comment..'
           />
           <button className='text-md text-md text-gray-400 border-2 w-[100px] rounded-md bg-white border-gray-100' onClick={addComment}>
-            {isPostingComment ? 'Commenting' : 'Comment'}
+            {isPostingComment ? 'Commenting' : 'Add'}
           </button>
         </form>
       </div>}

@@ -51,12 +51,12 @@ const Navbar = () => {
           <input
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
-            className='bg-[#D5DBE0] p-3 md:text-md text-black font-medium border-2 focus:outline-none focus:border-2 w-[300px] md:w-[350px] rounded-md  md:top-0'
+            className='bg-white p-3 md:text-md text-black font-medium border-2 focus:outline-none focus:border-2 w-[300px] md:w-[350px] rounded-md  md:top-0'
             placeholder='Search for accounts or videos'
           />
           <button
             onClick={handleSearch}
-            className='absolute md:right-5 right-6 top-4 border-l-2 border-gray-100 pl-4 text-2xl text-gray-100'
+            className='absolute md:right-5 right-6 top-4 border-l-2 border-gray-100 pl-4 text-2xl text-gray-500'
           >
             <BiSearch />
           </button>
@@ -66,7 +66,7 @@ const Navbar = () => {
         {user ? (
           <div className='flex gap-5 md:gap-10'>
             <Link href='/upload'>
-              <button className=' bg-[#D5DBE0] border-2 rounded-md px-2 md:px-4 text-md text-gray-500  font-semibold flex items-center gap-2'>
+              <button className=' bg-white border-2 rounded-md px-2 md:px-4 text-md text-gray-500  font-semibold flex items-center gap-2'>
                 <IoMdAdd className='text-xl' />{' '}
                 <span className='hidden md:block'>Upload </span>
               </button>
@@ -86,7 +86,7 @@ const Navbar = () => {
             )}
               <button
                 type='button'
-                className=' border-2 p-2 rounded-full cursor-pointer outline-none shadow-md'
+                className=' border-2 p-2 rounded-md bg-white cursor-pointer outline-none shadow-md'
                 onClick={() => {
                   googleLogout();
                   removeUser();
